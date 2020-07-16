@@ -1,0 +1,16 @@
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\NTLMTest.exe.config
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\NTLMTest.exe
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\NTLMTest.pdb
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\NTLMMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\RPCMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\SMBMessageParser.dll
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\Common.dll
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\NTLMMessageParse.pdb
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\RPCMessageParse.pdb
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\SMBMessageParser.pdb
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\bin\Debug\Common.pdb
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\obj\Debug\NTLMTest.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\obj\Debug\NTLMTest.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\obj\Debug\NTLMTest.csproj.CopyComplete
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\obj\Debug\NTLMTest.exe
+C:\Users\admin\Desktop\NTLMTest\NTLMTest\obj\Debug\NTLMTest.pdb

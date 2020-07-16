@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\NTLMTest\Common\bin\Debug\Common.dll
+C:\Users\admin\Desktop\NTLMTest\Common\bin\Debug\Common.pdb
+C:\Users\admin\Desktop\NTLMTest\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\NTLMTest\Common\obj\Debug\Common.dll
+C:\Users\admin\Desktop\NTLMTest\Common\obj\Debug\Common.pdb

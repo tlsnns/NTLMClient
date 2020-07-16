@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE76C9E8-2CA0-4542-A37F-E7A2154A4195}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMBMessageParser</RootNamespace>
+    <AssemblyName>SMBMessageParser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pipe\PipeDisConnectException.cs" />
+    <Compile Include="SMB2File.cs" />
+    <Compile Include="Models\NetworkStruct\Close\CloseRequest.cs" />
+    <Compile Include="Models\NetworkStruct\Close\CloseResponse.cs" />
+    <Compile Include="Models\NetworkStruct\Create\CreateRequest.cs" />
+    <Compile Include="Models\NetworkStruct\Create\CreateResponse.cs" />
+    <Compile Include="Models\NetworkStruct\Create\ECreateAction.cs" />
+    <Compile Include="Models\NetworkStruct\Create\ECreateDisposition.cs" />
+    <Compile Include="Models\NetworkStruct\Create\EImpersonationLevel.cs" />
+    <Compile Include="Models\NetworkStruct\Create\EOplockLevel.cs" />
+    <Compile Include="Models\NetworkStruct\Create\FilePipePrinterAccessMaskFlags.cs" />
+    <Compile Include="Models\NetworkStruct\Create\ShareAccessFlags.cs" />
+    <Compile Include="Models\NetworkStruct\ErrorResponse.cs" />
+    <Compile Include="Models\NetworkStruct\IOCTL\CTLCodeType.cs" />
+    <Compile Include="Models\NetworkStruct\IOCTL\CTLType.cs" />
+    <Compile Include="Models\NetworkStruct\IOCTL\IOCTLRequest.cs" />
+    <Compile Include="Models\NetworkStruct\IOCTL\IOCTLResponse.cs" />
+    <Compile Include="Models\NetworkStruct\LogoffAndTreeDisconnect.cs" />
+    <Compile Include="Models\NetworkStruct\Read\ReadRequest.cs" />
+    <Compile Include="Models\NetworkStruct\Read\ReadResponse.cs" />
+    <Compile Include="Models\NetworkStruct\SessionSetup\SessionSetupRequest.cs" />
+    <Compile Include="Models\NetworkStruct\SessionSetup\SessionSetupResponse.cs" />
+    <Compile Include="Models\NetworkStruct\SMB2Message.cs" />
+    <Compile Include="Models\NetworkStruct\TreeConnect\TreeConnectRequest.cs" />
+    <Compile Include="Models\NetworkStruct\TreeConnect\TreeConnectResponse.cs" />
+    <Compile Include="Models\NetworkStruct\Write\WriteRequest.cs" />
+    <Compile Include="Models\NetworkStruct\Write\WriteResponse.cs" />
+    <Compile Include="Models\NTStateType.cs" />
+    <Compile Include="Pipe\PipeClient.cs" />
+    <Compile Include="Pipe\PipeDirection.cs" />
+    <Compile Include="SMB2Client.cs" />
+    <Compile Include="SMB2Worker.cs" />
+    <Compile Include="Models\NetworkStruct\Negotiate\ESecurityMode.cs" />
+    <Compile Include="Models\NetworkStruct\Negotiate\NegotiateRequest.cs" />
+    <Compile Include="Models\NetworkStruct\Negotiate\NegotiateResponse.cs" />
+    <Compile Include="Models\NetworkStruct\SMB2Body.cs" />
+    <Compile Include="Models\NetworkStruct\ESMB2Command.cs" />
+    <Compile Include="Models\NetworkStruct\SMB2Header.cs" />
+    <Compile Include="Models\NetworkStruct\SMB2HeaderFlags.cs" />
+    <Compile Include="SMBTransportOnTCP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMBTransport.cs" />
+    <Compile Include="SMB2Tree.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5caec9dd-5377-41cb-8ea4-a0676d68c8d6}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NTLMMessageParse\NTLMMessageParser.csproj">
+      <Project>{05ba9c6a-af1d-438d-8e96-1f0abb9be423}</Project>
+      <Name>NTLMMessageParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

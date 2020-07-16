@@ -1,0 +1,13 @@
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\RPCMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\RPCMessageParse.pdb
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\Common.dll
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\SMBMessageParser.dll
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\NTLMMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\Common.pdb
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\SMBMessageParser.pdb
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\bin\Debug\NTLMMessageParse.pdb
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\obj\Debug\RPCMessageParse.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\obj\Debug\RPCMessageParse.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\obj\Debug\RPCMessageParse.csproj.CopyComplete
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\obj\Debug\RPCMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\RPCMessageParse\obj\Debug\RPCMessageParse.pdb

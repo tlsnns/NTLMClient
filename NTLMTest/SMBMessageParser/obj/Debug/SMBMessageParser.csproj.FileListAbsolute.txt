@@ -1,0 +1,11 @@
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\SMBMessageParser.dll
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\SMBMessageParser.pdb
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\Common.dll
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\NTLMMessageParse.dll
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\Common.pdb
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\bin\Debug\NTLMMessageParse.pdb
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\obj\Debug\SMBMessageParser.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\obj\Debug\SMBMessageParser.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\obj\Debug\SMBMessageParser.csproj.CopyComplete
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\obj\Debug\SMBMessageParser.dll
+C:\Users\admin\Desktop\NTLMTest\SMBMessageParser\obj\Debug\SMBMessageParser.pdb

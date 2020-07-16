@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FAF95C0-D691-4CFD-955F-AA4E972A6CB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPCMessageParse</RootNamespace>
+    <AssemblyName>RPCMessageParse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fun\CloseServiceHandle.cs" />
+    <Compile Include="Fun\CreateServiceW.cs" />
+    <Compile Include="Fun\IDL.cs" />
+    <Compile Include="Models\NetworkStruct\Auth\Auth.cs" />
+    <Compile Include="Models\NetworkStruct\Auth\AuthenticationLevelType.cs" />
+    <Compile Include="Models\NetworkStruct\Auth\SecTrailer.cs" />
+    <Compile Include="Models\NetworkStruct\Auth\SecurityProviderType.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\Bind.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\BindACK.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\BindTimeFeatureNegotiationBitmaskFlags.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\Context.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\ContextResult.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\ContextResultType.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\ProviderReasonType.cs" />
+    <Compile Include="Models\NetworkStruct\Bind\Syntax.cs" />
+    <Compile Include="Fun\OpenSCManagerW.cs" />
+    <Compile Include="Fun\OpenServiceW.cs" />
+    <Compile Include="ProtocolSequenceType.cs" />
+    <Compile Include="RpcBind.cs" />
+    <Compile Include="RPCClient.cs" />
+    <Compile Include="Models\NetworkStruct\NDR\DataRepresentationFormatLabel.cs" />
+    <Compile Include="Models\NetworkStruct\NDR\FloatingPointType.cs" />
+    <Compile Include="Models\NetworkStruct\NDR\OrderAndCharsetFlags.cs" />
+    <Compile Include="Models\NetworkStruct\SpecialPDU.cs" />
+    <Compile Include="Models\NetworkStruct\GenericPDU.cs" />
+    <Compile Include="Models\NetworkStruct\PDUFlags.cs" />
+    <Compile Include="Models\NetworkStruct\PDUType.cs" />
+    <Compile Include="Models\NetworkStruct\ReqPes\Request.cs" />
+    <Compile Include="Models\NetworkStruct\ReqPes\Response.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fun\StartServiceW.cs" />
+    <Compile Include="RpcTransport.cs" />
+    <Compile Include="RpcTransportOnPipe.cs" />
+    <Compile Include="RpcTransportOnTcp.cs" />
+    <Compile Include="RPCWorker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5caec9dd-5377-41cb-8ea4-a0676d68c8d6}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NTLMMessageParse\NTLMMessageParser.csproj">
+      <Project>{05BA9C6A-AF1D-438D-8E96-1F0ABB9BE423}</Project>
+      <Name>NTLMMessageParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMBMessageParser\SMBMessageParser.csproj">
+      <Project>{CE76C9E8-2CA0-4542-A37F-E7A2154A4195}</Project>
+      <Name>SMBMessageParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
