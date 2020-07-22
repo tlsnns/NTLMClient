@@ -118,14 +118,14 @@ namespace SMBMessageParser
             }
 
             ulong mid = (ulong)Interlocked.Increment(ref MessageId);
-            var type1Data = NTLMMessageFactory.CreateType1().ToArray();
+            var type1Data = NTLMMessageHelper.CreateType1().ToArray();
             var sm = SendSessionSetupRequest(mid, 0, type1Data);
             var ssr = sm.SMB2Body as SessionSetupResponse;
             SessionId = sm.SMB2Header.SessionId;
             byte[] securityBuffer = ssr.SecurityBuffer;
 
             mid = (ulong)Interlocked.Increment(ref MessageId);
-            var type3Data = NTLMMessageFactory.CreateType3(securityBuffer, userName, password).ToArray();
+            var type3Data = NTLMMessageHelper.CreateType3(securityBuffer, userName, password).ToArray();
             sm = SendSessionSetupRequest(mid, SessionId, type3Data);
 
             IsBuildSession = true;

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace NTLMMessageParse
 {
-    public class NTLMMessageFactory
+    public class NTLMMessageHelper
     {
         static public List<byte> CreateType1()
         {

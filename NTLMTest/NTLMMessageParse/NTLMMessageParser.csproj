@@ -58,7 +58,7 @@
     <Compile Include="Models\MetaDataVariableTargetInfos.cs" />
     <Compile Include="Models\MetaDataPayloadString.cs" />
     <Compile Include="NTLMClient.cs" />
-    <Compile Include="NTLMMessageFactory.cs" />
+    <Compile Include="NTLMMessageHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HashUtils.cs" />
   </ItemGroup>
